@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: {
-        "react":"./app.js"
+        "react":"./App.js"
 	},
     output: {
         path: path.resolve(__dirname, "build"), // string
@@ -19,8 +19,14 @@ module.exports = {
                 query: {
                     presets: ["es2015", "react"]
                 }
-            }
-
+            },
+			{
+				test: /\.less$/,           
+				loader: "less-loader", // compiles Less to CSS           
+				options: {
+                    sourceMap: true
+                }
+       		}
         ]
     },
     plugins: [

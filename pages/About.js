@@ -8,7 +8,8 @@ export class About extends React.Component {
     render() {
         return (
             <div>
-				About
+				<h1>About the author</h1>
+				
 			</div>
         );
     }

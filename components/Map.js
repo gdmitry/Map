@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 export class Map extends React.Component {
     constructor(props) {
@@ -42,7 +43,10 @@ export class Map extends React.Component {
 
     render() {
         return (
+			<div>
+				<Link to='about'>Roster</Link>
           <div id="map" style={{width: '500px',height: '400px'}}></div>
+		  </div>
         );
     }
 }
