@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Authorization extends React.Component {
+export class AuthPage extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -8,7 +8,10 @@ export class Authorization extends React.Component {
     render() {
         return (
             <div>
-			</div>
+                <h1>Login</h1>
+                <p>
+                </p>
+            </div>
         );
     }
 }

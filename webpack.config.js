@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: {
-        "react":"./App.js"
+        "react":"./client/app.js"
 	},
     output: {
         path: path.resolve(__dirname, "build"), // string
@@ -35,7 +35,7 @@ module.exports = {
         //     sourceMap: true
         // }),
         CopyWebpackPlugin([
-            { from: "./index.html" }
+            { from: "./client/index.html" }
         ])
     ],
     devtool: "source-map",
