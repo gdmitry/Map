@@ -35,7 +35,9 @@ module.exports = {
         //     sourceMap: true
         // }),
         CopyWebpackPlugin([
-            { from: "./client/index.html" }
+            { from: "./client/index.html" },
+            { from: "./client/styles.css", to: "./css/styles.css" },
+            { from: "./node_modules/normalize.css/normalize.css", to: "./css/normalize.css" }
         ])
     ],
     devtool: "source-map",

@@ -1,4 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
+import React from "react";
 
 import { AboutPage } from "./containers/AboutPage";
 import { AuthPage } from "./containers/AuthPage";

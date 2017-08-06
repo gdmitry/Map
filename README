@@ -15,6 +15,10 @@ http://api.2gis.ru/doc/maps/1.0/manual/geocoding/
 
 React router:
 
+
+// Nice to refer https://webpack.js.org/guides/development/
+// https://www.theodo.fr/blog/2016/07/a-comprehensive-introduction-to-webpack-the-module-bundler/
+
 http://jamesknelson.com/why-you-shouldnt-style-with-javascript/
 https://survivejs.com/react/advanced-techniques/styling-react/
 https://codepen.io/pshrmn/pen/YZXZqM
@@ -23,4 +27,9 @@ https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
 https://scotch.io/tutorials/routing-react-apps-the-complete-guide
 
 
+Material Design:
+http://materializecss.com/sass.html
+
+React trainning:
+https://reacttraining.com/react-router/web/api/Link/replace-bool
 
