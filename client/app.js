@@ -14,3 +14,5 @@ ReactDOM.render(
     </div>
   </HashRouter>,
   document.getElementById("container"));
+
+  require('./src/redux.js');
