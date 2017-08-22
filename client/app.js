@@ -15,4 +15,4 @@ ReactDOM.render(
   </HashRouter>,
   document.getElementById("container"));
 
-  require('./src/redux.js');
+  //require('./src/redux.js');
