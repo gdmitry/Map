@@ -39,5 +39,4 @@ export default class _2gisMapProvider extends EventEmitter {
 				.openOn(this);
 		});
 	}
-
 }

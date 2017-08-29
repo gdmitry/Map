@@ -31,9 +31,11 @@ export class Map extends React.Component {
 	}
 
 	updateState(marker) {		
+		// Make a copy of state
 		let copyState = {
 			points: this.state.points.slice()
 		};
+		// Add a marker to copy
 		copyState.points.push(marker);
 		this.setState(copyState);
 	}
@@ -50,6 +52,6 @@ export class Map extends React.Component {
 	}	
 
 	render() {
-		return <div id = "map"></div>;
+		return <div id = 'map'></div>;
 	}
 }
