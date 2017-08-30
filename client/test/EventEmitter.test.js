@@ -1,6 +1,7 @@
 import assert from 'assert';
 import { expect, should } from "chai";
 import EventEmitter from '../src/services/EventEmitter';
+import _ from 'lodash';
 
 describe('EventEmitter', () => {
 	let service;
@@ -9,16 +10,22 @@ describe('EventEmitter', () => {
   	});
 
 	describe('#basic API tests', () => {
-		it('should subscribe for events', () => {
-			return false;
+		it('should subscribe for events', (done) => {
+			service.on('test_event', done);
+			service.emit('test_event');
 		});
 
 		it('should unsubscribe for events', () => {
-
+			let calback = () => {
+				assert.ok(false);
+			};
+			service.on('test_event', calback);
+			service.off('test_event', calback);
+			service.emit('test_event');
   		});
 
 		it('should subscribe for one event', () => {
-			[1,2,3].indexOf(0).should.be.equal(-1);
+
   		});
 		
 		it('should emit an event', () => {

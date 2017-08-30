@@ -4,17 +4,14 @@ export default class EventEmitter {
 	}   
 
 	on(event, listener) {
-		var listeners = this.subscriptions.get(event);
-		if (!listeners) {
-			listeners = [];
-		}
+		var listeners = this.subscriptions.get(event) || [];
 		listeners.push(listener);
 		this.subscriptions.set(event, listeners);
 		return this;
 	}
 
 	off(event, listener) {
-		let listeners = this.subscriptions.get(event);
+		let listeners = this.subscriptions.get(event) || [] ;
 		listeners = listeners.filter((l) => {
 			l !== listener;
 		});
