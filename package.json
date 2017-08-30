@@ -6,23 +6,27 @@
     "init": "npm install live-server -g",
     "build": "webpack",
     "dev": "webpack -w",
+	"test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec ./client/test/*.test.js",
     "start": "live-server --port=8000 --open=build --ignore=build"
   },
   "dependencies": {
     "jquery": "3.2.1",
     "lodash": "^4.17.4",
+    "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.1.2",
-    "redux": "^3.7.2",
-	"normalize.css": "^7.0.0"
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-core": "6.24.1",
     "babel-loader": "7.0.0",
     "babel-preset-es2015": "latest",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.1",
     "copy-webpack-plugin": "^4.0.1",
+    "mocha": "^3.5.0",
     "path": "0.12.7",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "2.4.1",
